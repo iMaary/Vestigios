@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: b8df4a6a951a4f54e93b206d167c2abd
+guid: da5e8d532cf42fe4cae409beacddee23
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Main Character_0
+    21300000: MC altura 420_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -96,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Character_0
+      name: MC altura 420_0
       rect:
         serializedVersion: 2
-        x: 357
+        x: 72
         y: 0
-        width: 1261
-        height: 1884
+        width: 284
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,7 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d7a4a5a0aacf8146993d30b8db5e84d
+      spriteID: 362e00cd26e2da9428c3a0ad2e336179
       vertices: []
       indices: 
       edges: []
@@ -118,7 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1ce1a722f493e7b4ba894e6f98a7e824
+    spriteID: 7f98b12b85d3b4642998e4296b65ec04
     vertices: []
     indices: 
     edges: []

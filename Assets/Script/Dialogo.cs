@@ -13,12 +13,13 @@ public class Dialogo : MonoBehaviour
     private string[] intro;
     private bool terminouTexto = true;
     [SerializeField] private GameObject b, canva;
+    [SerializeField] SpriteRenderer tabuleiro;
 
     void Start()
     {
 
         resp1 = new string[] { "você apertou na primeira perguntar", "você apertou na segunda perguntar" };
-        intro = new string[] {"estou andando de Ônibus..." , "eu vou salvar minha amiga?"};
+        intro = new string[] { "Já estou nesse ônibus a três horas. Acabei cochilando mas a estrada cheia de buracos me fez acordar. Sonhei com minha amiga, desaparecida há quase um mês, e o motivo pelo qual estou fazendo essa viagem. Preciso saber onde ela está. Recebi uma mensagem falando que ela foi vista nessa cidade.", " A cidade está vazia. Nenhuma alma viva rondando esse lugar. Posso jurar que vi uma bola de feno se arrastando pelo chão. Os únicos três prédios nesse lugar são uma Igreja, um Bar e uma Fazenda. Que cidadezinha mais estranha..." };
         resposta = Respostas.intro;
     }
 
@@ -43,10 +44,11 @@ public class Dialogo : MonoBehaviour
                 break;
             case Respostas.respostaUm:
                 canva.SetActive(false);
+                tabuleiro.color = new Color(1,1,1,1);
                 PadraoTextos();
                 break;
             case Respostas.respostaDois:
-                //referencia da scene game over
+                SceneManager.LoadScene("GameOver");
                 PadraoTextos();
                 break;
             default:
@@ -66,8 +68,9 @@ public class Dialogo : MonoBehaviour
         {
             padrao = resp.Substring(0, i);
             textoResposta.text = padrao;
-            yield return new WaitForSeconds(0.09f);
+            yield return new WaitForSeconds(0.07f);
         }
+        textoResposta.text = resp;
         terminouTexto = true;
     }
 
