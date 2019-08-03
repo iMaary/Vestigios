@@ -12,7 +12,7 @@ public class Dialogo : MonoBehaviour
     private string[] resp1;
     private string[] intro;
     private bool terminouTexto = true;
-    [SerializeField] private GameObject b, canva;
+    [SerializeField] private GameObject b, canva, botoes;
     [SerializeField] SpriteRenderer tabuleiro;
 
     void Start()
@@ -44,6 +44,7 @@ public class Dialogo : MonoBehaviour
                 break;
             case Respostas.respostaUm:
                 canva.SetActive(false);
+                botoes.SetActive(true);
                 tabuleiro.color = new Color(1,1,1,1);
                 PadraoTextos();
                 break;
