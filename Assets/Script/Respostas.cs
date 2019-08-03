@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum Respostas
 {
-        respostaUm, respostaDois, nulo
+        respostaUm, respostaDois, pulaTexto, nulo, intro
 }

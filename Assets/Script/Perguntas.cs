@@ -7,12 +7,13 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(Button))]
 public class Perguntas : MonoBehaviour
 {
-    [SerializeField] private Dialogo dl;
+    private Dialogo dl;
     [SerializeField] private Respostas rp;
     private Button b;
 
     void Start()
     {
+        dl = GameObject.FindWithTag("Dialogo").GetComponent<Dialogo>();
         SetDefault();
     }
 
