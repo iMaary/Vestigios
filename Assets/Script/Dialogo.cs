@@ -8,53 +8,64 @@ public class Dialogo : MonoBehaviour
 {
     public Respostas resposta;
     [SerializeField] private Text textoResposta;
-    private string padrao = "";
-    private string[] resp1;
-    private string[] intro;
-    private bool terminouTexto = true;
-    [SerializeField] private GameObject b, canva;
-    [SerializeField] SpriteRenderer tabuleiro;
+    protected string padrao = "";
+    protected string[] resp1;
+    protected string[] intro;
+    protected bool terminouTexto = true;
+    [SerializeField] protected GameObject b, canva;
+    [SerializeField] protected SpriteRenderer tabuleiro;
 
-    void Start()
-    {
-
-        resp1 = new string[] { "você apertou na primeira perguntar", "você apertou na segunda perguntar" };
-        intro = new string[] { "Já estou nesse ônibus a três horas. Acabei cochilando mas a estrada cheia de buracos me fez acordar. Sonhei com minha amiga, desaparecida há quase um mês, e o motivo pelo qual estou fazendo essa viagem. Preciso saber onde ela está. Recebi uma mensagem falando que ela foi vista nessa cidade.", " A cidade está vazia. Nenhuma alma viva rondando esse lugar. Posso jurar que vi uma bola de feno se arrastando pelo chão. Os únicos três prédios nesse lugar são uma Igreja, um Bar e uma Fazenda. Que cidadezinha mais estranha..." };
-        resposta = Respostas.intro;
-    }
-
-    void Update()
+    protected void Update()
     {
         if(terminouTexto)
             ControllerTexts();
     }
 
-    private void ControllerTexts()
+    protected void ControllerTexts()
     {
         switch (resposta)
         {
             case Respostas.intro:
-                StartCoroutine(ApareceTexto(intro[0]));
+                Intro();
                 PadraoTextos();
                 break;
             case Respostas.pulaTexto:
-                StartCoroutine(ApareceTexto(intro[1]));
-                b.SetActive(true);
+                PulaTexto();
                 PadraoTextos();
                 break;
             case Respostas.respostaUm:
-                canva.SetActive(false);
-                tabuleiro.color = new Color(1,1,1,1);
+                Resposta01();
                 PadraoTextos();
                 break;
             case Respostas.respostaDois:
-                SceneManager.LoadScene("GameOver");
+                Resposta02();
                 PadraoTextos();
                 break;
             default:
                 break;
         }
     }
+
+    #region Respostas
+    protected virtual void Intro()
+    {
+        PadraoTextos();
+    }
+
+    protected virtual void PulaTexto()
+    {
+        PadraoTextos();
+    }
+
+    protected virtual void Resposta01()
+    {
+        PadraoTextos();
+    }
+    protected virtual void Resposta02()
+    {
+        PadraoTextos();
+    }
+    #endregion
 
     private void PadraoTextos()
     {
