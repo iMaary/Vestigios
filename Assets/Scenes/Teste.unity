@@ -441,6 +441,7 @@ MonoBehaviour:
   textoResposta: {fileID: 1167433766}
   b: {fileID: 1196198900}
   canva: {fileID: 2141845525}
+  botoes: {fileID: 1196198900}
   tabuleiro: {fileID: 2010986104}
 --- !u!1 &1015566537
 GameObject:
@@ -813,7 +814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1196198901
 RectTransform:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class Dialogo : MonoBehaviour
     protected string[] resp1;
     protected string[] intro;
     protected bool terminouTexto = true;
-    [SerializeField] protected GameObject b, canva, botoes;
+    [SerializeField] protected GameObject b;
     [SerializeField] protected SpriteRenderer tabuleiro;
 
     protected void Update()

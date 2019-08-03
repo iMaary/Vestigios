@@ -27,9 +27,7 @@ public class DialogoIntro : Dialogo
 
     protected override void Resposta01()
     {
-        canva.SetActive(false);
-        botoes.SetActive(true);
-        tabuleiro.color = new Color(1, 1, 1, 1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Mapa");
         base.Resposta01();
     }
 
