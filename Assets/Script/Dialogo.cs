@@ -8,11 +8,12 @@ public class Dialogo : MonoBehaviour
 {
     public Respostas resposta;
     [SerializeField] private Text textoResposta;
+
     protected string padrao = "";
     protected string[] resp1;
     protected string[] intro;
     protected bool terminouTexto = true;
-    [SerializeField] protected GameObject b, canva;
+    [SerializeField] protected GameObject b, canva, botoes;
     [SerializeField] protected SpriteRenderer tabuleiro;
 
     protected void Update()
