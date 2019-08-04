@@ -12,7 +12,7 @@ public class Dialogo : MonoBehaviour
     protected string padrao = "";
     protected string[] resp1;
     protected string[] intro;
-    protected bool terminouTexto = true;
+    protected bool terminouTexto = true, desabilita = true;
     [SerializeField] protected GameObject b;
     [SerializeField] protected SpriteRenderer tabuleiro;
 
@@ -35,12 +35,16 @@ public class Dialogo : MonoBehaviour
                 PadraoTextos();
                 break;
             case Respostas.respostaUm:
-                Resposta01();
+                if(desabilita)
+                    Resposta01();
                 PadraoTextos();
+                desabilita = false;
                 break;
             case Respostas.respostaDois:
-                Resposta02();
+                if(desabilita)
+                    Resposta02();
                 PadraoTextos();
+                desabilita = false;
                 break;
             default:
                 break;
