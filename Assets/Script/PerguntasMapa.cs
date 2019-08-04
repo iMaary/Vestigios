@@ -12,7 +12,7 @@ public class PerguntasMapa : MonoBehaviour
 
     void Start()
     {
-        dl = GameController.Instance.dialogoMapa;
+        //dl = UIController.Instance.dialogoMapa;
         SetDefault();
     }
 

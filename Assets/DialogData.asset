@@ -12,18 +12,303 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbc276749b1ec342a122415aac3bbb7, type: 3}
   m_Name: DialogData
   m_EditorClassIdentifier: 
+  currentQuestion: 0
   questions:
-  - id: 0
-    questionText: O que vou perguntar agora?
+  - background: {fileID: 21300000, guid: ca3b9188d1878274b8d6964138ab22dd, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 0
+    questionText: "Tento empurrar as portas pesadas de madeira mas elas est\xE3o trancadas.
+      A parte da frente \xE9 uma mistura de lixo e folhas secas."
     answers:
-    - answerText: jshdfkjasn
-      questionResult: 
-  - id: 0
-    questionText: 
+    - answerText: Vou chamar pelo padre
+      consequences:
+      - sceneName: 
+        nextQuestionId: 3
+        willDo: 1
+    - answerText: 'Vou voltar para o mapa '
+      consequences:
+      - sceneName: Mapa
+        nextQuestionId: 0
+        willDo: 0
+    - answerText: "Como a \xF3tima detetive que eu sou, percebo que existe uma rua
+        paralela \xE0 igreja. Talvez eu deva investigar."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 2
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 1
+    questionText: "Um vento passeia pela torre do sino e cria um assovio assustador.
+      Mas esse \xE9 o \xFAnico som que eu escuto vindo l\xE1 de dentro."
+    answers:
+    - answerText: Tranquilo.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 1
+  - background: {fileID: 0}
+    character: {fileID: 0}
+    otherCharacter: {fileID: 0}
+    id: 2
+    questionText: "A rua lateral da igreja d\xE1 acesso ao cemit\xE9rio. O muro \xE9
+      baixo e o acesso \xE0 Igreja parece facilitado."
+    answers:
+    - answerText: Vou pular o muro.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 3
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 3
+    questionText: "Uma cova rec\xE9m cavada \xE9 a primeira coisa que eu percebo no
+      cemit\xE9rio. A terra \xE9 escura e avermelhada mas n\xE3o existe nenhuma p\xE1
+      no local."
+    answers:
+    - answerText: "A terra perto do port\xE3o parece revirada."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 4
+        willDo: 1
+    - answerText: "A porta de tr\xE1s da igreja est\xE1 aberta."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 5
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 4
+    questionText: "Um caco de vidro no ch\xE3o. Pelo cheiro deve ser Whisky. N\xE3o
+      que eu tenha bebido, tenho apenas 17 anos."
+    answers:
+    - answerText: "Um barulho vindo da porta de tr\xE1s da igreja. Talvez eu deva
+        me virar e investigar."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 5
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 5
+    questionText: "Um padre est\xE1 saindo da igreja e se aproximando de mim. Ele
+      est\xE1 cambaleando e t\xF4 sentindo daqui o cheiro de \xE1lcool. Ele t\xE1
+      segurando uma bibl\xEDa mas n\xE3o parece muito certo sobre o que fazer com
+      ela.   \"A igreja est\xE1 fechada! Sem primeira comunh\xE3o hoje! Fora! Que
+      diachos voc\xEA est\xE1 vestindo, garota?!\" "
+    answers:
+    - answerText: "\"Voc\xEA por acaso n\xE3o viu uma garota da minha idade por aqui
+        nos \xFAltimos dias, viu?\""
+      consequences:
+      - sceneName: 
+        nextQuestionId: 6
+        willDo: 1
+    - answerText: "\"\xC9 assim que g\xF3ticos se vestem hoje em dia. Hoje \xE9 o
+        dia anual de conhecer um novo cemit\xE9rio.\""
+      consequences:
+      - sceneName: 
+        nextQuestionId: 7
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 6
+    questionText: "O padre muda sua express\xE3o mas n\xE3o sei se foi a pergunta
+      ou s\xF3 um efeito do \xE1lcool.   \"Ningu\xE9m entra ou sai dessa igreja h\xE1
+      duas semanas!\"  Ele cambaleia um pouco mas volta a olhar para mim.  \"Quem
+      sabe dessas coisas \xE9 o dono do bar. Nunca vi uma alma mais perdida. Talvez
+      voc\xEA ache sua amiga desaparecida por l\xE1. Agora, FORA!\""
+    answers:
+    - answerText: Ele parece agressivo, melhor eu ir para outro lugar.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 7
+    questionText: "O padre parece confuso. Ele trope\xE7a para tr\xE1s e cai de bunda
+      no ch\xE3o.   \"Ah, que se dane. V\xE1 l\xE1 dentro e pegue uma garrafa de vinho
+      no altar.\"  O padre se deita no ch\xE3o e solu\xE7a."
+    answers:
+    - answerText: Vou entrar na igreja.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 8
+        willDo: 1
+    - answerText: "\"Eu n\xE3o posso beber \xE1lcool mas aceitaria um suco de uva.\""
+      consequences:
+      - sceneName: 
+        nextQuestionId: 9
+        willDo: 1
+  - background: {fileID: 21300000, guid: ca3b9188d1878274b8d6964138ab22dd, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 8
+    questionText: "A igreja est\xE1 bastante empoeirada. As portas fechadas fazem
+      com que a \xFAnica luz que entre venha dos vitrais. Um vitral com Jesus joga
+      uma luz vermelha sob o altar, iluminando principalmente um crucifixo cheio de
+      manchas. Uma garrafa de vinho est\xE1 ao lado dele. "
+    answers:
+    - answerText: Examinar o crucifixo.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 10
+        willDo: 1
+    - answerText: Vou pegar a garrafa de vinho e sair.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 11
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 9
+    questionText: "O padre d\xE1 uma risada.  Ele come\xE7a a se levantar.  \"Fora!\" "
+    answers:
+    - answerText: Talvez eu deva evitar um confronto.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 10
+    questionText: "Um crucifixo pesado de algum metal que eu n\xE3o consigo identificar.
+      As manchas indicam que j\xE1 faz algum tempo que ningu\xE9m limpa ele."
+    answers:
+    - answerText: O padre deve estar esperando o vinho.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 11
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 11
+    questionText: "No caminho para fora eu sinto um odor estranho, provavelmente um
+      esgoto estourado. E...doce?  Quando volto ao cemit\xE9rio, o padre ainda est\xE1
+      no ch\xE3o. Ele movimenta as pernas e os bra\xE7os fazendo um anjo de terra. "
+    answers:
+    - answerText: Entrego a garrafa de vinho para ele.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 12
+        willDo: 1
+    - answerText: "Abro a garrafa de vinho e derramo na terra do cemit\xE9rio."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 13
+        willDo: 1
+    - answerText: Abro a garrafa de vinho e dou um gole.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 15
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 12
+    questionText: "Ele d\xE1 um longo gole at\xE9 beber metade da garrafa, mas cospe
+      grande parte do vinho no ch\xE3o.   \"Sem \xE1lcool, de novo! O dono do bar
+      me paga! Maldito!\"  Ele volta a beber o vinho sem \xE1lcool da garrafa ainda
+      no ch\xE3o."
+    answers:
+    - answerText: "N\xE3o acho que v\xE1 encontrar mais nada por aqui."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 13
+    questionText: "O padre parece n\xE3o se importar ou at\xE9 perceber o que acabei
+      de fazer. Ele ainda est\xE1 fazendo seu anjo de terra.  "
+    answers:
+    - answerText: "N\xE3o acho que v\xE1 encontrar mais nada por aqui."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+    - answerText: "Me deito do lado dele e come\xE7o a fazer um anjo de terra."
+      consequences:
+      - sceneName: 
+        nextQuestionId: 14
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 0}
+    id: 14
+    questionText: "Dessa nova perspectiva, consigo entender o apelo dessa atividade.
+      Olhando pro c\xE9u, come\xE7o a perder minha vis\xE3o devido ao sol forte e
+      continuo balan\xE7ado meus bra\xE7os e pernas at\xE9 que meu corpo est\xE1 cavando
+      um t\xFAnel at\xE9 o centro da terra. Acho que vou ter que achar minha amiga
+      em algum outro momento.                         /n Final B"
     answers: []
-  - id: 0
-    questionText: 
-    answers: []
-  - id: 0
-    questionText: 
-    answers: []
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 15
+    questionText: "Para sorte da minha m\xE3e, esse \xE9 o vinho menos alc\xF3olico
+      que j\xE1 provei na minha vida. Cuspo no ch\xE3o.  \"Ei!\" O padre larga sua
+      atividade no ch\xE3o. \"Esse \xE9 um gole de um bom vinho!\""
+    answers:
+    - answerText: "\"N\xE3o tem \xE1lcool aqui!\""
+      consequences:
+      - sceneName: 
+        nextQuestionId: 16
+        willDo: 1
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 16
+    questionText: "\"Maldito dono do bar! Eu ainda vou dar um sopapo naquele maldito!
+      Maldito!\"  Ele bala\xE7a a m\xE3o, dando um soco no ar, mas isso faz que ele
+      perca o equil\xEDbrio e caia no ch\xE3o. Dessa vez ele parece estar desacordado."
+    answers:
+    - answerText: Talvez eu deva evitar um confronto.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 9
+    questionText: "O padre d\xE1 uma risada.  Ele come\xE7a a se levantar.  \"Fora!\" "
+    answers:
+    - answerText: Talvez eu deva evitar um confronto.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 9
+    questionText: "O padre d\xE1 uma risada.  Ele come\xE7a a se levantar.  \"Fora!\" "
+    answers:
+    - answerText: Talvez eu deva evitar um confronto.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0
+  - background: {fileID: 21300000, guid: d5bffd27ce64fa84f8994ce8867aaa92, type: 3}
+    character: {fileID: 21300000, guid: da5e8d532cf42fe4cae409beacddee23, type: 3}
+    otherCharacter: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+    id: 9
+    questionText: "O padre d\xE1 uma risada.  Ele come\xE7a a se levantar.  \"Fora!\" "
+    answers:
+    - answerText: Talvez eu deva evitar um confronto.
+      consequences:
+      - sceneName: 
+        nextQuestionId: 0
+        willDo: 0

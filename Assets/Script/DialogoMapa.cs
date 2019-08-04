@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class DialogoMapa : MonoBehaviour
 {
 
-    [Header("Data")]
-    public DialogData data;
+    //[Header("Data")]
+    //public DialogData data;
 
     [Header("Settings")]
     public Respostas resposta;
@@ -19,14 +19,15 @@ public class DialogoMapa : MonoBehaviour
     private void Awake()
     {
         resposta = Respostas.nulo;
-        StartCoroutine(ApareceTexto(data.questions[0].questionText));
+        //StartCoroutine(ApareceTexto(data.questions[0].questionText));
 
-        GameController.Instance.dialogoMapa = this;
+        //GameManager.Instance.UpdateData(data);
+        //UIController.Instance.dialogoMapa = this;
     }
 
     void Update()
     {
-        ControllerTexts();
+        //ControllerTexts();
     }
 
     private void ControllerTexts()
