@@ -137,16 +137,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182732277}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2141845529}
-  m_RootOrder: 1
+  m_Father: {fileID: 286259394}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -245, y: 210.038}
+  m_AnchoredPosition: {x: -244.99997, y: 235.01659}
   m_SizeDelta: {x: 420, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182732279
@@ -169,7 +169,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a0bfd962121b5c940b85a7f5917a8f09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cc9876907040a54ca7f4b4f42d31a40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -215,14 +215,17 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1015566538}
+  - {fileID: 1167433765}
   - {fileID: 1196198901}
+  - {fileID: 182732278}
+  - {fileID: 1762181810}
   m_Father: {fileID: 2141845529}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: 225.00018}
+  m_SizeDelta: {x: 800, y: 500.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &286259395
 CanvasRenderer:
@@ -302,8 +305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 assim que g\xF3ticos se vestem hoje em dia. Hoje \xE9 o dia anual
-    de conhecer um novo cemit\xE9rio."
+  m_Text: Eu tenho uma bomba na cidade e temos 30 segundos antes que ela exploda.
 --- !u!222 &385152789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -434,10 +436,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 870195096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 811bca5e70b0c374887fcf43212a0722, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8128a2a02170b4f9ec56533b727b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resposta: 3
+  resposta: 0
   textoResposta: {fileID: 1167433766}
   b: {fileID: 1196198900}
   tabuleiro: {fileID: 2010986104}
@@ -469,14 +471,13 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1167433765}
+  m_Children: []
   m_Father: {fileID: 286259394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 160.8, y: 27.9}
+  m_AnchorMin: {x: 1, y: 0.43557668}
+  m_AnchorMax: {x: 1, y: 0.43557668}
+  m_AnchoredPosition: {x: -239.17497, y: 109.93695}
   m_SizeDelta: {x: 421.6, y: 235.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015566539
@@ -607,16 +608,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167433764}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1015566538}
-  m_RootOrder: 0
+  m_Father: {fileID: 286259394}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010967, y: -0.0000048876}
+  m_AnchoredPosition: {x: 160.825, y: 77.68917}
   m_SizeDelta: {x: 385.2, y: 197.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167433766
@@ -827,11 +828,11 @@ RectTransform:
   - {fileID: 1235802551}
   - {fileID: 1193184938}
   m_Father: {fileID: 286259394}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 160.8, y: -160}
+  m_AnchoredPosition: {x: 160.80003, y: -360.28015}
   m_SizeDelta: {x: 421.6, y: 94.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196198902
@@ -1109,17 +1110,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762181809}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1642608629}
-  m_Father: {fileID: 2141845529}
-  m_RootOrder: 2
+  m_Father: {fileID: 286259394}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -71, y: 31.099976}
+  m_AnchoredPosition: {x: -71, y: 56.07858}
   m_SizeDelta: {x: 102.09, y: 27.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762181811
@@ -1284,8 +1285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Voc\xEA por acaso n\xE3o viu uma garota da minha idade por aqui nos \xFAltimos
-    dias, viu?"
+  m_Text: "Auto l\xE1! Onde est\xE1 minha amiga?!"
 --- !u!222 &1811291252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1464,8 +1464,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 286259394}
-  - {fileID: 182732278}
-  - {fileID: 1762181810}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

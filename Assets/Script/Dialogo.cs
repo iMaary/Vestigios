@@ -86,4 +86,9 @@ public class Dialogo : MonoBehaviour
         terminouTexto = true;
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }
